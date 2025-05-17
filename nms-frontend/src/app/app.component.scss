@@ -1,0 +1,121 @@
+.nms-landing-container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nms-header {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+.nms-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.nms-header h1 {
+  font-size: 2.5rem;
+  color: #2d3a4b;
+  margin-bottom: 8px;
+}
+
+.nms-tagline {
+  color: #4a6073;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.nms-features {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+  padding: 0 16px;
+}
+
+.nms-features h2 {
+  text-align: center;
+  color: #2d3a4b;
+  margin-bottom: 24px;
+}
+
+.nms-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.nms-feature-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+  padding: 28px 20px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.nms-feature-card:hover {
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.16);
+}
+
+.nms-feature-card h3 {
+  color: #1976d2;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.nms-feature-card p {
+  color: #4a6073;
+  font-size: 1rem;
+}
+
+.nms-cta {
+  text-align: center;
+  margin: 48px 0 32px 0;
+}
+
+.nms-cta h2 {
+  color: #2d3a4b;
+  margin-bottom: 20px;
+}
+
+.nms-btn-primary, .nms-btn-secondary {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nms-btn-primary {
+  background: #1976d2;
+  color: #fff;
+}
+.nms-btn-primary:hover {
+  background: #125ea2;
+}
+
+.nms-btn-secondary {
+  background: #fff;
+  color: #1976d2;
+  border: 1px solid #1976d2;
+}
+.nms-btn-secondary:hover {
+  background: #e3eafc;
+}
+
+.nms-footer {
+  text-align: center;
+  color: #4a6073;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  margin-top: auto;
+}

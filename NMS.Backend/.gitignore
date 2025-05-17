@@ -1,0 +1,55 @@
+# .NET build results
+bin/
+obj/
+
+# Rider project files
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code settings
+.vscode/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# HTTP Client requests
+httpRequests/
+
+# Database local files
+*.mdf
+*.ldf
+
+# EF Core Migrations snapshots
+Migrations/*Snapshot.cs
+
+# Others
+*.dbmdl
+*.dbproj.schemaview
+*.pdb
+*.cache
+*.bak
+*.ncb
+*.sdf
+*.opensdf
+*.v12.suo
+_ReSharper*/
+
+# Test results
+TestResults/
+
+# Azure Pipelines
+/.azure-pipelines/
+
+# Local secrets
+secrets.json
+appsettings.Development.json

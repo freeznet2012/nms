@@ -1,0 +1,51 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Angular build output
+/dist/
+/out-tsc/
+
+# Node modules
+/node_modules/
+
+# IDE and editor folders
+/.idea/
+/.vscode/
+
+# Compiled output
+*.js
+*.js.map
+*.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Angular specific
+/.angular/cache/
+
+# Test coverage
+/coverage/
+
+# Misc
+.sass-cache/
+connect.lock
+libpeerconnection.log
+testem.log
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Local env files
+environment.*.ts
