@@ -1,0 +1,93 @@
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black; /* Professional Google-like blue */
+  box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.06);
+  padding: 1rem 2.5rem; /* Adjusted padding */
+  color: #fff; /* Ensure text is white for contrast */
+}
+.main-navbar__left {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+}
+.main-navbar__brand {
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: 800; /* Bolder font weight */
+  color: #fff; /* Ensure brand text is white */
+  letter-spacing: -0.02em;
+}
+.main-navbar__center {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-navbar__section {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #232b38;
+}
+.main-navbar__right {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+.main-navbar__user {
+  font-size: 1rem; /* Adjusted font size */
+  font-weight: 500; /* Reduced font weight */
+  color: #e8f0fe; /* Softer white for user info */
+  margin-right: 1rem; /* Increased margin */
+}
+.main-navbar__link {
+  color: #e8f0fe; /* Updated link color to match user info */
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+.main-navbar__link:hover {
+  color: #d2e3fc; /* Slightly lighter hover effect */
+}
+.main-navbar__logout {
+  background: #ea4335; /* Google-like red for logout button */
+  color: #fff; /* Ensure text is white */
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.main-navbar__logout:hover {
+  background: #d93025; /* Darker red on hover */
+}
+
+.nms-main-content {
+  padding: 2rem 1rem;
+  min-height: 80vh;
+  background: #f5f7fa;
+}
+
+@media (max-width: 700px) {
+  .main-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1rem 0.5rem 1rem;
+    min-height: unset;
+  }
+  .main-navbar__center {
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+  .main-navbar__right {
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+}

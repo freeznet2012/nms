@@ -1,0 +1,38 @@
+<div class="dashboard-wrapper">
+  <aside class="dashboard-sidebar">
+    <div class="sidebar-title">Newspaper Management</div>
+    <nav class="sidebar-nav">
+      <a routerLink="/home" routerLinkActive="active"><span class="icon">🏠</span> Dashboard</a>
+      <a routerLink="/customers" routerLinkActive="active"><span class="icon">👤</span> Customers</a>
+      <a routerLink="/subscriptions" routerLinkActive="active"><span class="icon">🔗</span> Subscriptions</a>
+      <a routerLink="/reports" routerLinkActive="active"><span class="icon">📊</span> Reports</a>
+    </nav>
+  </aside>
+  <section class="dashboard-main">
+    <div class="dashboard-cards">
+      <div class="dashboard-card">
+        <div class="card-icon blue"><span>👤</span></div>
+        <div class="card-info"><span class="card-value">305</span><span class="card-label">Customers</span></div>
+      </div>
+      <div class="dashboard-card">
+        <div class="card-icon green"><span>📍</span></div>
+        <div class="card-info"><span class="card-value">15</span><span class="card-label">Routes</span></div>
+      </div>
+      <div class="dashboard-card">
+        <div class="card-icon yellow"><span>📰</span></div>
+        <div class="card-info"><span class="card-value">58</span><span class="card-label">Newspapers</span></div>
+      </div>
+    </div>
+    <div class="dashboard-charts">
+      <div class="dashboard-chart">
+        <div class="chart-title">Subscriptions</div>
+        <img src="/assets/images/subscriptions-chart.png" alt="Subscriptions Chart" />
+      </div>
+      <div class="dashboard-chart">
+        <div class="chart-title">Revenue</div>
+        <img src="/assets/images/revenue-chart.png" alt="Revenue Chart" />
+      </div>
+    </div>
+    <!-- Add more dashboard content as needed -->
+  </section>
+</div>

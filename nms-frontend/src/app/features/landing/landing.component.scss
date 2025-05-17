@@ -1,0 +1,213 @@
+.landing-wrapper {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+    padding: 0 2vw;
+}
+
+.landing-left {
+    flex: 1 1 0;
+    max-width: 520px;
+    padding: 0 3vw 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -100px;
+}
+
+.landing-title {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #232b38;
+    line-height: 1.05;
+    margin-bottom: 2rem;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.landing-subtitle {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.25rem;
+    color: #4a5568;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.landing-right {
+    flex: 1 1 0;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 24px 0 rgba(44, 62, 80, 0.10);
+    padding: 2.5rem 2.25rem 2rem 2.25rem;
+    margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.login-form label {
+    font-size: 1.08rem;
+    color: #232b38;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.01em;
+}
+
+.login-form input {
+    padding: 0.85rem 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 9px;
+    font-size: 1.08rem;
+    outline: none;
+    transition: border 0.2s;
+    background: #f8fafc;
+}
+
+.login-form input:focus {
+    border-color: #1976d2;
+}
+
+.login-btn {
+    background: #4f8cff;
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 9px;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 1px 4px 0 rgba(44, 62, 80, 0.08);
+}
+
+.login-btn:hover {
+    background: #1976d2;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1.1rem 0 0.5rem 0;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background: #f5f6fa;
+    color: #232b38;
+    border: none;
+    border-radius: 9px;
+    padding: 0.8rem 1rem;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 1px 2px 0 rgba(44, 62, 80, 0.06);
+    width: 100%;
+    text-align: center;
+}
+
+.social-btn img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.social-btn span {
+    flex: 1;
+    text-align: center;
+}
+
+.social-btn.google:hover {
+    background: #e8f0fe;
+}
+
+.social-btn.facebook:hover {
+    background: #e7f3ff;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    color: #232b38;
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    transition: color 0.2s;
+    letter-spacing: 0.01em;
+}
+
+.register-link:hover {
+    color: #1976d2;
+}
+
+@media (max-width: 900px) {
+    .landing-wrapper {
+        flex-direction: column;
+        padding: 2vw 0;
+    }
+
+    .landing-left,
+    .landing-right {
+        max-width: 100%;
+        padding: 1.5rem 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .landing-title,
+    .landing-subtitle {
+        text-align: center;
+        align-items: center;
+    }
+
+    .landing-right {
+        margin-top: 2rem;
+    }
+}
+
+.nms-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f0f0f0;
+    color: #666;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 18px 18px;
+}
+
+.nms-footer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #ff6a00 0%, #ff41f8 50%, #7702ff 100%);
+    z-index: 1;
+    opacity: 0.1;
+}
+
+.nms-footer p {
+    position: relative;
+    z-index: 2;
+}
